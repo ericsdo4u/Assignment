@@ -1,0 +1,18 @@
+def reverse_List1(numbers):
+	order = len(numbers)
+	for number in range(order):
+		for num in range(0, order - number - 1):
+			if numbers[num] > numbers[num + 1]:
+
+				numbers[num], numbers[num + 1] = numbers[num + 1], numbers[num]			
+
+def print_orderly(list_Order):
+	reverse_List1(list_Order)
+	for order in range (list_order):
+		print(order, end=' ')
+
+
+
+
+sample_List = [10, 2, 8, 9, 3, 4, 1, 5]
+print_orderly(list_Order)

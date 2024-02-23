@@ -1,0 +1,43 @@
+class Account:
+    def _init_(self, name, balance, account_number, pin):
+        self.name = name
+        self.balance = balance
+        self.account_number = account_number
+        self.pin = pin
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.balance += amount
+            print(f"Deposit of ${amount} successful. New balance: ${self.balance}")
+        else:
+
+	:
+            print("Invalid deposit amount.")
+
+    def withdraw(self, amount, pin):
+        if pin == self.pin:
+            if amount > 0 and amount <= self.balance:
+                self.balance -= amount
+                print(f"Withdrawal of ${amount} successful. New balance: ${self.balance}")
+            else:
+                print("Insufficient funds.")
+        else:
+            print("Invalid PIN.")
+
+    def display_balance(self, pin):
+        if pin == self.pin:
+
+print(f"Account Name: {self.name}")
+            print(f"Account Number: {self.account_number}")
+            print(f"Balance: ${self.balance}")
+            print(f"PIN: {self.pin}")
+        else:
+            print("Invalid PIN.")
+
+# Example usage:
+account = Account("John Doe", 1000, "123456789", "1234")
+print("Account created successfully.")
+account.deposit(500)
+account.withdraw(200, "1234")
+account.display_balance("1234")
+

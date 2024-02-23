@@ -1,0 +1,60 @@
+
+    assertFalse(myBike.getAcceleration());
+    myBike.canAccelerate();
+    assertTrue(myBike.getAcceleration());
+
+    assertEquals(15, myBike.getGear1());
+    myBike.setGear1();
+    assertEquals(16, myBike.getGear1());
+}
+
+@Test
+public void testBikeAcceleration_Gear2(){
+        Bike myBike = new Bike();
+
+
+    assertFalse(myBike.checkPowerOn());
+    myBike.PowerOn();
+    assertTrue(myBike.checkPowerOn());
+
+    assertEquals(24, myBike.getGear2());
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+    if (speed >= 15 && speed <= 300) {
+        gear +=1;
+        accelerates +=1;
+        speed++;
+    }
+}
+
+    public int getGearChanged(){
+        return speed;
+
+
+
+
+
+
+    public void Accelerate() {
+        
+        
+        
+    }
+
+public int getAccelerate(){
+
+        
+}
+
